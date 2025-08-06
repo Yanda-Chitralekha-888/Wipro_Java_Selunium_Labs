@@ -3,7 +3,7 @@ package Labs;
 public class BankApp {
 
 
-	    // Inner Person class
+	    
 	    static class Person {
 	        private String name;
 	        private float age;
@@ -13,7 +13,7 @@ public class BankApp {
 	            this.age = age;
 	        }
 
-	        // Getters
+	  
 	        public String getName() {
 	            return name;
 	        }
@@ -22,7 +22,6 @@ public class BankApp {
 	            return age;
 	        }
 
-	        // toString for person
 	        @Override
 	        public String toString() {
 	            return "Person{Name='" + name + "', Age=" + age + "}";
@@ -79,17 +78,17 @@ public class BankApp {
 	        Account smithAcc = new Account(smith, 2000);
 	        Account kathyAcc = new Account(kathy, 3000);
 
-	        // b) Deposit 2000 into Smith's account
+	     
 	        smithAcc.deposit(2000);
 
-	        // c) Withdraw 2000 from Kathy's account
+	       
 	        kathyAcc.withdraw(2000);
 
-	        // d) Display updated balances
+	    
 	        System.out.println("Smith's Account Balance: ₹" + smithAcc.getBalance());
 	        System.out.println("Kathy's Account Balance: ₹" + kathyAcc.getBalance());
 
-	        // e) Print full account details
+	
 	        System.out.println("\nAccount Details:");
 	        System.out.println(smithAcc);
 	        System.out.println(kathyAcc);
