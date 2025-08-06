@@ -4,14 +4,14 @@ package Labs;
 
 	public class EmployeeApp {
 
-	    // Fields
+
 	    private int id;
 	    private String name;
 	    private double salary;
 	    private String designation;
 	    private String insuranceScheme;
 
-	    // Constructor
+	
 	    public EmployeeApp(int id, String name, double salary, String designation) {
 	        this.id = id;
 	        this.name = name;
@@ -20,7 +20,6 @@ package Labs;
 	        this.insuranceScheme = determineScheme();
 	    }
 
-	    // Method to determine insurance scheme
 	    private String determineScheme() {
 	        if (designation.equalsIgnoreCase("Manager") && salary >= 40000) {
 	            return "Scheme A";
@@ -33,7 +32,7 @@ package Labs;
 	        }
 	    }
 
-	    // Display employee details
+
 	    public void displayDetails() {
 	        System.out.println("\nEmployee Details:");
 	        System.out.println("ID           : " + id);
