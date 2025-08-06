@@ -3,7 +3,7 @@ package Labs;
 public class BankSystem {
 	
 
-	    //Account
+	
 	    static class Account {
 	        protected long accNum;
 	        protected double balance;
@@ -38,7 +38,7 @@ public class BankSystem {
 	        }
 	    }
 
-	    // Derived class: SavingsAccount
+
 	    static class SavingsAccount extends Account {
 	        private final double minimumBalance = 500;
 
@@ -57,7 +57,6 @@ public class BankSystem {
 	        }
 	    }
 
-	    //  CurrentAccount
 	    static class CurrentAccount extends Account {
 	        private double overdraftLimit = 1000;
 
@@ -65,7 +64,7 @@ public class BankSystem {
 	            super(accHolder, balance);
 	        }
 
-	        @Override
+	        
 	        public boolean withdraw(double amount) {
 	            if (balance - amount >= -overdraftLimit) {
 	                balance -= amount;
@@ -86,7 +85,7 @@ public class BankSystem {
 	        System.out.println(sa);
 	        System.out.println(ca);
 
-	        // Try withdrawal
+	  l
 	        System.out.println("\nWithdrawing ₹1700 from Smith (Savings)...");
 	        sa.withdraw(1700); 
 
@@ -95,7 +94,7 @@ public class BankSystem {
 
 	        System.out.println("\nWithdrawing ₹3000 from Kathy (Current)...");
 	        ca.withdraw(3000);  
-	        //  updated balances
+	     
 	        System.out.println("\nUpdated Balances:");
 	        System.out.println(sa);
 	        System.out.println(ca);
