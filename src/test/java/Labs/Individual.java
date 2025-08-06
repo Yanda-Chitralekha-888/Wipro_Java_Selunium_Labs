@@ -35,7 +35,7 @@ public class Individual {
             Individual person1 = new Individual("Chitra", "Lekha", 'F');
             System.out.println(person1);
 
-        } catch (Labs.Individual.NameValidationException e) {  // ✅ Correct reference
+        } catch (Labs.Individual.NameValidationException e) { 
             System.out.println("Error: " + e.getMessage());
         }
     }
