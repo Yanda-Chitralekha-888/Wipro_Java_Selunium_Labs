@@ -3,7 +3,11 @@ package Labs;
 public class BankApp {
 
 
+<<<<<<< HEAD
 	    
+=======
+	   
+>>>>>>> 27400cd (Commit)
 	    static class Person {
 	        private String name;
 	        private float age;
@@ -13,7 +17,10 @@ public class BankApp {
 	            this.age = age;
 	        }
 
+<<<<<<< HEAD
 	  
+=======
+>>>>>>> 27400cd (Commit)
 	        public String getName() {
 	            return name;
 	        }
@@ -22,7 +29,11 @@ public class BankApp {
 	            return age;
 	        }
 
+<<<<<<< HEAD
 	        @Override
+=======
+	      
+>>>>>>> 27400cd (Commit)
 	        public String toString() {
 	            return "Person{Name='" + name + "', Age=" + age + "}";
 	        }
@@ -78,6 +89,7 @@ public class BankApp {
 	        Account smithAcc = new Account(smith, 2000);
 	        Account kathyAcc = new Account(kathy, 3000);
 
+<<<<<<< HEAD
 	     
 	        smithAcc.deposit(2000);
 
@@ -89,6 +101,17 @@ public class BankApp {
 	        System.out.println("Kathy's Account Balance: ₹" + kathyAcc.getBalance());
 
 	
+=======
+	        smithAcc.deposit(2000);
+
+	        kathyAcc.withdraw(2000);
+
+	     
+	        System.out.println("Smith's Account Balance: ₹" + smithAcc.getBalance());
+	        System.out.println("Kathy's Account Balance: ₹" + kathyAcc.getBalance());
+
+	     
+>>>>>>> 27400cd (Commit)
 	        System.out.println("\nAccount Details:");
 	        System.out.println(smithAcc);
 	        System.out.println(kathyAcc);

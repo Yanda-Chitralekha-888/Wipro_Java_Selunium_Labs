@@ -20,6 +20,10 @@ package Labs;
 	        this.insuranceScheme = determineScheme();
 	    }
 
+<<<<<<< HEAD
+=======
+	    
+>>>>>>> 27400cd (Commit)
 	    private String determineScheme() {
 	        if (designation.equalsIgnoreCase("Manager") && salary >= 40000) {
 	            return "Scheme A";
