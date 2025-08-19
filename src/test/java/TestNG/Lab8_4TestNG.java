@@ -3,6 +3,7 @@ package TestNG;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -19,17 +20,20 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-public class Lab_4 {
+public class Lab8_4TestNG {
 	WebDriver driver;
   @Test()
   public void f() throws InterruptedException {
 	  //title verification
-	  String title= driver.getTitle();
-	  if(title.equals("Your Store")) {
-		  System.out.println("title is verified");
+	Assert.assertEquals(driver.getTitle(),"Your Store");
+	 if( driver.getTitle().equals("Your Store"))
+	 {
+		 System.out.println("title is verified");
+		 Assert.assertTrue(true);
 	  }
-	  else {
+	 else {
 		  System.out.println("title is not verified");
+		  Assert.assertFalse(true);
 	  }
 	  /*
 Go to 'Desktops' tab
