@@ -8,66 +8,83 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.BeforeClass;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-public class TC001 {
+public class pagefactory_login_3lab {
 	WebDriver driver;
+	String projectpath=System.getProperty("user.dir")  ;
   @Test(dataProvider = "dp")
   public void f(String username, String password) throws InterruptedException {
-	  /*WebDriverManager.chromedriver().setup();
-	  ChromeDriver driver=new ChromeDriver();
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");*/
-
-	  String title=driver.getTitle();
+	  	String title=driver.getTitle();
 		System.out.println("The Title is:"+title);
 		Thread.sleep(3000);
+		
 		//WebElement username=driver.findElement(By.name("username"));
 		//username.sendKeys("Admin");
-		login_pageobjects obj=new login_pageobjects(driver);
+		login_pagefactory obj=new login_pagefactory(driver);
 		obj.enterusername(username);
 		obj.enterpassword(password);
 		obj.clickonlogin();
-		/*driver.findElement(By.name("username")).sendKeys(username);
-		driver.findElement(By.name("password")).sendKeys(password);
-		By loginbutton=By.xpath("//button[@type='submit']");*/
-
-}
-
-  
+	//	driver.findElement(By.name("username")).sendKeys(username);
+		//driver.findElement(By.name("password")).sendKeys(password);
+	//	driver.findElement(By.xpath("//button[@type='submit']")).click();
+	  }
   @BeforeMethod
   public void beforeMethod() {
-	  System.out.println("Before Method");
+	  System.out.println("Before method");
 	  WebDriverManager.chromedriver().setup();
-	   driver=new ChromeDriver();
+		driver=new ChromeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-
   }
-
   @AfterMethod
   public void afterMethod() {
-	  System.out.println("After  Method");
+	  System.out.println("After method");
+	  driver.quit();
   }
 
 
+  
   @DataProvider
-  public Object[][] dp() {
-    return new Object[][] {
-    	 new Object[] { "Admin", "admin123" },
-         //new Object[] { "chitra", "admin123" },
-         //new Object[] { "geeta", "welcome" },
-
-    };
-  }
+  public Object[][] dp() throws IOException {
+  String[][] data=new String[3][2];
+	  
+	  
+	  File file1=new File(projectpath+"\\data.xlsx");
+	  FileInputStream fs=new FileInputStream(file1);
+	  XSSFWorkbook workbook=new XSSFWorkbook(fs);
+	  XSSFSheet worksheet=workbook.getSheetAt(0);
+	  int rowcount=worksheet.getPhysicalNumberOfRows();
+	  System.out.println("rows:"+rowcount);
+	  
+	  for(int i=0;i<rowcount;i++)
+	  {
+		  data[i][0]=worksheet.getRow(i).getCell(0).getStringCellValue();
+	 
+		  data[i][1]=worksheet.getRow(i).getCell(1).getStringCellValue();
+	  }
+	  
+	  return data;
+	  
+    
+    }
   @BeforeClass
   public void beforeClass() {
-	  System.out.println("Before Class");
+	  System.out.println("Before class");
   }
 
   @AfterClass

@@ -76,7 +76,18 @@ Click on 'Add to Cart' button
 			driver.findElement(By.name("description")).click();
 			driver.findElement(By.id("button-search")).click();
 			
+			driver.findElement(By.name("search")).sendKeys("Monitor");
+			driver.findElement(By.xpath("//*[@id=\"search\"]/span/button")).click();
+			
+			//Add the step after Click on 'Mac' where verify the 'Mac' heading
 
+			 String title1= driver.getTitle();
+			  if(title1.equals("Mac")) {
+				  System.out.println("Mac is verified");
+			  }
+			  else {
+				  System.out.println("Mac is not verified");
+			  }
 			
   }
  
