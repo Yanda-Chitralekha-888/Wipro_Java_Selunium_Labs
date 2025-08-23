@@ -1,5 +1,5 @@
 package TestNG;
- 
+
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,63 +11,59 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Parameters;
 
 import org.testng.annotations.Test;
- 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
- 
+
 public class demo {
 
 	@Parameters("browser")
 
-  @Test
+	@Test
 
-  public void test1(String browser) {
+	public void test1(String browser) {
 
-	  if(browser.equalsIgnoreCase("chrome"))
+		if (browser.equalsIgnoreCase("chrome"))
 
-	  {
+		{
 
-	  System.out.println("This is chrometest");
+			System.out.println("This is chrometest");
 
-	  WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().setup();
 
-		WebDriver driver=new ChromeDriver();
-
-		driver.get("https://www.flipkart.com/");
-
-	  }
-
-	  else if(browser.equalsIgnoreCase("firefox"))
-
-			  {
-
-		  System.out.println("This is firefoxtest");
-
-		  WebDriverManager.firefoxdriver().setup();
-
-			WebDriver driver=new FirefoxDriver();
+			WebDriver driver = new ChromeDriver();
 
 			driver.get("https://www.flipkart.com/");
 
-			  }
+		}
 
-	  else if(browser.equalsIgnoreCase("edge"))
+		else if (browser.equalsIgnoreCase("firefox"))
 
-	  {
+		{
 
-  System.out.println("This is edgetest");
+			System.out.println("This is firefoxtest");
 
-  WebDriverManager.edgedriver().setup();
+			WebDriverManager.firefoxdriver().setup();
 
-	WebDriver driver=new EdgeDriver();
+			WebDriver driver = new FirefoxDriver();
 
-	driver.get("https://www.flipkart.com/");
+			driver.get("https://www.flipkart.com/");
 
-	  }
- 
-			  
+		}
 
-  }
+		else if (browser.equalsIgnoreCase("edge"))
+
+		{
+
+			System.out.println("This is edgetest");
+
+			WebDriverManager.edgedriver().setup();
+
+			WebDriver driver = new EdgeDriver();
+
+			driver.get("https://www.flipkart.com/");
+
+		}
+
+	}
 
 }
-
- 

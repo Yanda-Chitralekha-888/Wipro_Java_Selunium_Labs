@@ -27,89 +27,88 @@ import org.testng.annotations.AfterSuite;
 
 public class pagefactory_login_3lab {
 	WebDriver driver;
-	String projectpath=System.getProperty("user.dir")  ;
-  @Test(dataProvider = "dp")
-  public void f(String username, String password) throws InterruptedException {
-	  	String title=driver.getTitle();
-		System.out.println("The Title is:"+title);
+	String projectpath = System.getProperty("user.dir");
+
+	@Test(dataProvider = "dp")
+	public void f(String username, String password) throws InterruptedException {
+		String title = driver.getTitle();
+		System.out.println("The Title is:" + title);
 		Thread.sleep(3000);
-		
-		//WebElement username=driver.findElement(By.name("username"));
-		//username.sendKeys("Admin");
-		login_pagefactory obj=new login_pagefactory(driver);
+
+		// WebElement username=driver.findElement(By.name("username"));
+		// username.sendKeys("Admin");
+		login_pagefactory obj = new login_pagefactory(driver);
 		obj.enterusername(username);
 		obj.enterpassword(password);
 		obj.clickonlogin();
-	//	driver.findElement(By.name("username")).sendKeys(username);
-		//driver.findElement(By.name("password")).sendKeys(password);
-	//	driver.findElement(By.xpath("//button[@type='submit']")).click();
-	  }
-  @BeforeMethod
-  public void beforeMethod() {
-	  System.out.println("Before method");
-	  WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver();
+		// driver.findElement(By.name("username")).sendKeys(username);
+		// driver.findElement(By.name("password")).sendKeys(password);
+		// driver.findElement(By.xpath("//button[@type='submit']")).click();
+	}
+
+	@BeforeMethod
+	public void beforeMethod() {
+		System.out.println("Before method");
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-  }
-  @AfterMethod
-  public void afterMethod() {
-	  System.out.println("After method");
-	  driver.quit();
-  }
+	}
 
+	@AfterMethod
+	public void afterMethod() {
+		System.out.println("After method");
+		driver.quit();
+	}
 
-  
-  @DataProvider
-  public Object[][] dp() throws IOException {
-  String[][] data=new String[3][2];
-	  
-	  
-	  File file1=new File(projectpath+"\\data.xlsx");
-	  FileInputStream fs=new FileInputStream(file1);
-	  XSSFWorkbook workbook=new XSSFWorkbook(fs);
-	  XSSFSheet worksheet=workbook.getSheetAt(0);
-	  int rowcount=worksheet.getPhysicalNumberOfRows();
-	  System.out.println("rows:"+rowcount);
-	  
-	  for(int i=0;i<rowcount;i++)
-	  {
-		  data[i][0]=worksheet.getRow(i).getCell(0).getStringCellValue();
-	 
-		  data[i][1]=worksheet.getRow(i).getCell(1).getStringCellValue();
-	  }
-	  
-	  return data;
-	  
-    
-    }
-  @BeforeClass
-  public void beforeClass() {
-	  System.out.println("Before class");
-  }
+	@DataProvider
+	public Object[][] dp() throws IOException {
+		String[][] data = new String[3][2];
 
-  @AfterClass
-  public void afterClass() {
-	  System.out.println("After Class");
-  }
+		File file1 = new File(projectpath + "\\data.xlsx");
+		FileInputStream fs = new FileInputStream(file1);
+		XSSFWorkbook workbook = new XSSFWorkbook(fs);
+		XSSFSheet worksheet = workbook.getSheetAt(0);
+		int rowcount = worksheet.getPhysicalNumberOfRows();
+		System.out.println("rows:" + rowcount);
 
-  @BeforeTest
-  public void beforeTest() {
-	  System.out.println("Before Test");
-  }
+		for (int i = 0; i < rowcount; i++) {
+			data[i][0] = worksheet.getRow(i).getCell(0).getStringCellValue();
 
-  @AfterTest
-  public void afterTest() {
-	  System.out.println("After Test");
-  }
+			data[i][1] = worksheet.getRow(i).getCell(1).getStringCellValue();
+		}
 
-  @BeforeSuite
-  public void beforeSuite() {
-	  System.out.println("Before Suite");
-  }
+		return data;
 
-  @AfterSuite
-  public void afterSuite() {
-	  System.out.println("After Suite");
-  }
+	}
+
+	@BeforeClass
+	public void beforeClass() {
+		System.out.println("Before class");
+	}
+
+	@AfterClass
+	public void afterClass() {
+		System.out.println("After Class");
+	}
+
+	@BeforeTest
+	public void beforeTest() {
+		System.out.println("Before Test");
+	}
+
+	@AfterTest
+	public void afterTest() {
+		System.out.println("After Test");
+	}
+
+	@BeforeSuite
+	public void beforeSuite() {
+		System.out.println("Before Suite");
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+		System.out.println("After Suite");
+	}
 
 }

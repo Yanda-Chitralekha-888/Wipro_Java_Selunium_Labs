@@ -22,109 +22,102 @@ import org.testng.annotations.AfterSuite;
 
 public class Lab8_4TestNG {
 	WebDriver driver;
-  @Test()
-  public void f() throws InterruptedException {
-	  //title verification
-	Assert.assertEquals(driver.getTitle(),"Your Store");
-	 if( driver.getTitle().equals("Your Store"))
-	 {
-		 System.out.println("title is verified");
-		 Assert.assertTrue(true);
-	  }
-	 else {
-		  System.out.println("title is not verified");
-		  Assert.assertFalse(true);
-	  }
-	  /*
-Go to 'Desktops' tab
-Click on 'Mac'
-Select 'Name(A-Z)' from the 'Sort By' dropdown
-Click on 'Add to Cart' button
-*/
-	  driver.findElement(By.linkText("Desktops")).click();
-		 driver.findElement(By.linkText("Mac (1)")).click();
-		 
 
-		 WebElement sort=driver.findElement(By.id("input-sort"));
-			Select sle=new Select(sort);
-			//sle.selectByVisibleText("Name (A - Z)");
-			sle.selectByIndex(2);
-			driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div/div/div[2]/div[2]/button[1]")).click();
-		
-			//driver.findElement(by)
-			//Enter ‘Mobile’ in ‘Search’ text box and click on ‘Search’ button
-			driver.findElement(By.name("search")).sendKeys("Mobile");
-			driver.findElement(By.xpath("//*[@id=\"search\"]/span/button")).click();
-			Thread.sleep(2000);
-			//Clear the text from ‘Search Criteria’ text box
-			
-			driver.findElement(By.id("input-search")).clear();
-			//Click on ‘Search in product descriptions’ check box and click on ‘Search’ button
-			driver.findElement(By.name("description")).click();
-			driver.findElement(By.id("button-search")).click();
-			//Change the value from ‘Mobile’ to ‘Monitors’
+	@Test()
+	public void f() throws InterruptedException {
+		// title verification
+		Assert.assertEquals(driver.getTitle(), "Your Store");
+		if (driver.getTitle().equals("Your Store")) {
+			System.out.println("title is verified");
+			Assert.assertTrue(true);
+		} else {
+			System.out.println("title is not verified");
+			Assert.assertFalse(true);
+		}
+		/*
+		 * Go to 'Desktops' tab Click on 'Mac' Select 'Name(A-Z)' from the 'Sort By'
+		 * dropdown Click on 'Add to Cart' button
+		 */
+		driver.findElement(By.linkText("Desktops")).click();
+		driver.findElement(By.linkText("Mac (1)")).click();
 
-			driver.findElement(By.name("search")).sendKeys("Monitor");
-			driver.findElement(By.xpath("//*[@id=\"search\"]/span/button")).click();
-			
-			//Add the step after Click on 'Mac' where verify the 'Mac' heading
+		WebElement sort = driver.findElement(By.id("input-sort"));
+		Select sle = new Select(sort);
+		// sle.selectByVisibleText("Name (A - Z)");
+		sle.selectByIndex(2);
+		driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div/div/div[2]/div[2]/button[1]")).click();
 
-			 String title1= driver.getTitle();
-			  if(title1.equals("Mac")) {
-				  System.out.println("Mac is verified");
-			  }
-			  else {
-				  System.out.println("Mac is not verified");
-			  }
-  }
-  @BeforeMethod
-  public void beforeMethod() {
-	  WebDriverManager.chromedriver().setup();
-	  driver=new ChromeDriver();
-	  driver.get("https://tutorialsninja.com/demo/index.php");
-  }
+		// driver.findElement(by)
+		// Enter ‘Mobile’ in ‘Search’ text box and click on ‘Search’ button
+		driver.findElement(By.name("search")).sendKeys("Mobile");
+		driver.findElement(By.xpath("//*[@id=\"search\"]/span/button")).click();
+		Thread.sleep(2000);
+		// Clear the text from ‘Search Criteria’ text box
 
-  @AfterMethod
-  public void afterMethod() {
-  }
+		driver.findElement(By.id("input-search")).clear();
+		// Click on ‘Search in product descriptions’ check box and click on ‘Search’
+		// button
+		driver.findElement(By.name("description")).click();
+		driver.findElement(By.id("button-search")).click();
+		// Change the value from ‘Mobile’ to ‘Monitors’
 
+		driver.findElement(By.name("search")).sendKeys("Monitor");
+		driver.findElement(By.xpath("//*[@id=\"search\"]/span/button")).click();
 
-  @DataProvider
-  public Object[][] dp() {
-    return new Object[][] {
-      new Object[] { 1, "a" },
-      new Object[] { 2, "b" },
-    };
-  }
-  @BeforeClass
-  public void beforeClass() {
-	  System.out.println("Before Class");
-  }
+		// Add the step after Click on 'Mac' where verify the 'Mac' heading
 
-  @AfterClass
-  public void afterClass() {
-	  System.out.println("After class");
-  }
+		String title1 = driver.getTitle();
+		if (title1.equals("Mac")) {
+			System.out.println("Mac is verified");
+		} else {
+			System.out.println("Mac is not verified");
+		}
+	}
 
-  @BeforeTest
-  public void beforeTest() {
-	  System.out.println("Before Test");
-  }
+	@BeforeMethod
+	public void beforeMethod() {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.get("https://tutorialsninja.com/demo/index.php");
+	}
 
-  @AfterTest
-  public void afterTest() {
-	  System.out.println("After Test");
-  }
+	@AfterMethod
+	public void afterMethod() {
+	}
 
-  @BeforeSuite
-  public void beforeSuite() {
-	  System.out.println("Before Suite");
-  }
+	@DataProvider
+	public Object[][] dp() {
+		return new Object[][] { new Object[] { 1, "a" }, new Object[] { 2, "b" }, };
+	}
 
-  @AfterSuite
-  public void afterSuite() {
-	  System.out.println("After Suite");
-  }
+	@BeforeClass
+	public void beforeClass() {
+		System.out.println("Before Class");
+	}
 
+	@AfterClass
+	public void afterClass() {
+		System.out.println("After class");
+	}
+
+	@BeforeTest
+	public void beforeTest() {
+		System.out.println("Before Test");
+	}
+
+	@AfterTest
+	public void afterTest() {
+		System.out.println("After Test");
+	}
+
+	@BeforeSuite
+	public void beforeSuite() {
+		System.out.println("Before Suite");
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+		System.out.println("After Suite");
+	}
 
 }

@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="Test3(failed)">
-    <parameter name="browser" value="edge"/>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestNG.Lab9_4q">
+      <class name="com.orangehrm.tests.LoginOrangeHRM">
         <methods>
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="afterClass"/>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="f"/>
+          <include name="flushreport"/>
+          <include name="setupreport"/>
+          <include name="teardown"/>
+          <include name="verifylogin"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- TestNG.Lab9_4q -->
+      </class> <!-- com.orangehrm.tests.LoginOrangeHRM -->
     </classes>
-  </test> <!-- Test3(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

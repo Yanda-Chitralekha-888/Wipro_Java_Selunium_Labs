@@ -21,76 +21,73 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class Lab11_3q {
-	
+
 	WebDriver driver;
-	
-  @Test
-  public void f() throws InterruptedException {
-	  Lab11_3Page_object obj=new Lab11_3Page_object(driver);
-	  obj. ClickDesktop();
-	// driver.findElement(By.linkText("Desktops")).click();
-	  obj.ClickMac();
-	 //driver.findElement(By.linkText("Mac (1)")).click();
-       obj.sort();
 
-	 /*WebElement sort=driver.findElement(By.id("input-sort"));
-		Select sle=new Select(sort);
-		Thread.sleep(3000);
-		//sle.selectByVisibleText("Name (A - Z)");
-		sle.selectByIndex(2);
-		*/
-       obj.addtocart();
-		//driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div/div/div[2]/div[2]/button[1]"));
-  }
-  @BeforeMethod
-  public void beforeMethod() {
-	  WebDriverManager.chromedriver().setup();
-	  driver=new ChromeDriver();
-	  driver.get("https://tutorialsninja.com/demo/index.php");
-	  
-  }
+	@Test
+	public void f() throws InterruptedException {
+		Lab11_3Page_object obj = new Lab11_3Page_object(driver);
+		obj.ClickDesktop();
+		// driver.findElement(By.linkText("Desktops")).click();
+		obj.ClickMac();
+		// driver.findElement(By.linkText("Mac (1)")).click();
+		obj.sort();
 
-  @AfterMethod
-  public void afterMethod() {
-	  driver.quit();
-  }
+		/*
+		 * WebElement sort=driver.findElement(By.id("input-sort")); Select sle=new
+		 * Select(sort); Thread.sleep(3000); //sle.selectByVisibleText("Name (A - Z)");
+		 * sle.selectByIndex(2);
+		 */
+		obj.addtocart();
+		// driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div/div/div[2]/div[2]/button[1]"));
+	}
 
+	@BeforeMethod
+	public void beforeMethod() {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.get("https://tutorialsninja.com/demo/index.php");
 
-  @DataProvider
-  public Object[][] dp() {
-    return new Object[][] {
-      new Object[] { 1, "a" },
-      new Object[] { 2, "b" },
-    };
-  }
-  @BeforeClass
-  public void beforeClass() {
-	  System.out.println("Before Class");
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  System.out.println("After class");
-  }
+	@AfterMethod
+	public void afterMethod() {
+		driver.quit();
+	}
 
-  @BeforeTest
-  public void beforeTest() {
-	  System.out.println("Before Test");
-  }
+	@DataProvider
+	public Object[][] dp() {
+		return new Object[][] { new Object[] { 1, "a" }, new Object[] { 2, "b" }, };
+	}
 
-  @AfterTest
-  public void afterTest() {
-	  System.out.println("After Test");
-  }
+	@BeforeClass
+	public void beforeClass() {
+		System.out.println("Before Class");
+	}
 
-  @BeforeSuite
-  public void beforeSuite() {
-	  System.out.println("Before Suite");
-  }
+	@AfterClass
+	public void afterClass() {
+		System.out.println("After class");
+	}
 
-  @AfterSuite
-  public void afterSuite() {
-	  System.out.println("After Suite");
-  }
+	@BeforeTest
+	public void beforeTest() {
+		System.out.println("Before Test");
+	}
+
+	@AfterTest
+	public void afterTest() {
+		System.out.println("After Test");
+	}
+
+	@BeforeSuite
+	public void beforeSuite() {
+		System.out.println("Before Suite");
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+		System.out.println("After Suite");
+	}
 
 }

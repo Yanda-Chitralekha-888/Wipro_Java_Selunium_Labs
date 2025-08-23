@@ -1,8 +1,5 @@
 package Automation_Webrowse;
 
-
-
-
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -14,25 +11,19 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TC004 {
 
-	
-	 
-		public static void main(String[] args) {
-			// TODO Auto-generated method stub
-			WebDriverManager.chromedriver().setup();
-			WebDriver driver=new ChromeDriver();
-			driver.get("https://www.amazon.in/");
-			List<WebElement> alllinks=driver.findElements(By.tagName("a"));
-			
-			System.out.println("Total links in amazon.in:"+alllinks.size());
-			
-			for(WebElement link :alllinks)
-			{
-				System.out.println("The link is:"+link.getAttribute("href"));
-				System.out.println("The link is:"+link.getText());
-			}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.amazon.in/");
+		List<WebElement> alllinks = driver.findElements(By.tagName("a"));
+
+		System.out.println("Total links in amazon.in:" + alllinks.size());
+
+		for (WebElement link : alllinks) {
+			System.out.println("The link is:" + link.getAttribute("href"));
+			System.out.println("The link is:" + link.getText());
 		}
-	 
-	
 	}
 
-
+}
