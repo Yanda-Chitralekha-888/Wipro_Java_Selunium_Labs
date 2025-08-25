@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="E:\\Eclipse\\Java_Selenium\\src\\test\\resources\\Features"
-,glue= {"com.orangehrm.stepdefinitions;"}
+,glue= {"com.orangehrm.stepdefinitions"}
 ,dryRun=false
 ,monochrome=true)
 public class TestRunner {
