@@ -12,47 +12,45 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class TC002 {
-  @Test(dataProvider = "dp")
-  public void f(Integer n, String s) {
-  }
-  @BeforeMethod
-  public void beforeMethod() {
-  }
+	@Test(dataProvider = "dp")
+	public void f(Integer n, String s) {
+	}
 
-  @AfterMethod
-  public void afterMethod() {
-  }
+	@BeforeMethod
+	public void beforeMethod() {
+	}
 
+	@AfterMethod
+	public void afterMethod() {
+	}
 
-  @DataProvider
-  public Object[][] dp() {
-    return new Object[][] {
-      new Object[] { 1, "a" },
-      new Object[] { 2, "b" },
-    };
-  }
-  @BeforeClass
-  public void beforeClass() {
-  }
+	@DataProvider
+	public Object[][] dp() {
+		return new Object[][] { new Object[] { 1, "a" }, new Object[] { 2, "b" }, };
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@BeforeClass
+	public void beforeClass() {
+	}
 
-  @BeforeTest
-  public void beforeTest() {
-  }
+	@AfterClass
+	public void afterClass() {
+	}
 
-  @AfterTest
-  public void afterTest() {
-  }
+	@BeforeTest
+	public void beforeTest() {
+	}
 
-  @BeforeSuite
-  public void beforeSuite() {
-  }
+	@AfterTest
+	public void afterTest() {
+	}
 
-  @AfterSuite
-  public void afterSuite() {
-  }
+	@BeforeSuite
+	public void beforeSuite() {
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+	}
 
 }

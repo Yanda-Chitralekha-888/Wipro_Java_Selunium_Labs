@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.Lab9_4q">
+      <class name="TestNG.Lab_15_PageFactory_CSV">
         <methods>
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
           <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="afterClass"/>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
           <include name="afterMethod"/>
-          <include name="f"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="f" invocation-numbers="1"/>
         </methods>
-      </class> <!-- TestNG.Lab9_4q -->
+      </class> <!-- TestNG.Lab_15_PageFactory_CSV -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

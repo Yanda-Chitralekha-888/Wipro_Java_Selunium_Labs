@@ -21,69 +21,67 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class Lab3 {
-	
+
 	WebDriver driver;
-	
-  @Test(dataProvider = "dp")
-  public void f(Integer n, String s) throws InterruptedException {
-	 driver.findElement(By.linkText("Desktops")).click();
-	 driver.findElement(By.linkText("Mac (1)")).click();
 
-	 WebElement sort=driver.findElement(By.id("input-sort"));
-		Select sle=new Select(sort);
+	@Test(dataProvider = "dp")
+	public void f(Integer n, String s) throws InterruptedException {
+		driver.findElement(By.linkText("Desktops")).click();
+		driver.findElement(By.linkText("Mac (1)")).click();
+
+		WebElement sort = driver.findElement(By.id("input-sort"));
+		Select sle = new Select(sort);
 		Thread.sleep(3000);
-		//sle.selectByVisibleText("Name (A - Z)");
+		// sle.selectByVisibleText("Name (A - Z)");
 		sle.selectByIndex(2);
-  }
-  @BeforeMethod
-  public void beforeMethod() {
-	  WebDriverManager.chromedriver().setup();
-	  driver=new ChromeDriver();
-	  driver.get("https://tutorialsninja.com/demo/index.php");
-	  
-  }
+	}
 
-  @AfterMethod
-  public void afterMethod() {
-	  driver.quit();
-  }
+	@BeforeMethod
+	public void beforeMethod() {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.get("https://tutorialsninja.com/demo/index.php");
 
+	}
 
-  @DataProvider
-  public Object[][] dp() {
-    return new Object[][] {
-      new Object[] { 1, "a" },
-      new Object[] { 2, "b" },
-    };
-  }
-  @BeforeClass
-  public void beforeClass() {
-	  System.out.println("Before Class");
-  }
+	@AfterMethod
+	public void afterMethod() {
+		driver.quit();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  System.out.println("After class");
-  }
+	@DataProvider
+	public Object[][] dp() {
+		return new Object[][] { new Object[] { 1, "a" }, new Object[] { 2, "b" }, };
+	}
 
-  @BeforeTest
-  public void beforeTest() {
-	  System.out.println("Before Test");
-  }
+	@BeforeClass
+	public void beforeClass() {
+		System.out.println("Before Class");
+	}
 
-  @AfterTest
-  public void afterTest() {
-	  System.out.println("After Test");
-  }
+	@AfterClass
+	public void afterClass() {
+		System.out.println("After class");
+	}
 
-  @BeforeSuite
-  public void beforeSuite() {
-	  System.out.println("Before Suite");
-  }
+	@BeforeTest
+	public void beforeTest() {
+		System.out.println("Before Test");
+	}
 
-  @AfterSuite
-  public void afterSuite() {
-	  System.out.println("After Suite");
-  }
+	@AfterTest
+	public void afterTest() {
+		System.out.println("After Test");
+	}
+
+	@BeforeSuite
+	public void beforeSuite() {
+		System.out.println("Before Suite");
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+		System.out.println("After Suite");
+	}
 
 }
