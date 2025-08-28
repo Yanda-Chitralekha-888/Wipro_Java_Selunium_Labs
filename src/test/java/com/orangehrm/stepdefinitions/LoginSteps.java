@@ -5,6 +5,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.en.Given;
@@ -42,8 +43,8 @@ public class LoginSteps {
 	
 	@When("Enter the invalid username and password")
 	public void enter_the_invalid_username_and_password() {
-		driver.findElement(By.name("username")).sendKeys("Admin");
-				driver.findElement(By.name("password")).sendKeys("admin123");
+		driver.findElement(By.name("username")).sendKeys("Admhjjin");
+				driver.findElement(By.name("password")).sendKeys("admin123hjhg");
 	}
 
 	@Then("Close the browser")
@@ -71,12 +72,22 @@ public class LoginSteps {
 			System.out.println("Login unSuucessfull");
 		}
 	}
+	@Then("Login should be unsuccessful")
+	public void login_should_be_unsuccessful() {
+		WebElement error=driver.findElement(By.xpath("//p[text()='Invalid credentials']"));
+		if(error.isDisplayed())
+		{
+			System.out.println("login unsccessfull");
+		}
+				
+		
+	}
 
 	
 	@Then("verify dashboard")
 	public void verify_dashboard() {
 	    // Write code here that turns the phrase above into concrete actions
-	    //throw new io.cucumber.java.PendingException();
+	    // throw new io.cucumber.java.PendingException();
 	}
 
 }
