@@ -11,7 +11,7 @@ public class ExcelUtilities {
 	static String projectpath = System.getProperty("user.dir");
 
 	public static Object[][] getdata(String excelpath, String sheetname) throws IOException {
-		String[][] data = new String[3][2];
+		String[][] data = new String[4][2];
 
 		File file1 = new File(excelpath);
 		System.out.println("file path is:" + file1);
@@ -22,10 +22,13 @@ public class ExcelUtilities {
 		System.out.println("rows:" + rowcount);
 
 		for (int i = 0; i < rowcount; i++) {
+			
 			data[i][0] = worksheet.getRow(i).getCell(0).getStringCellValue();
 
 			data[i][1] = worksheet.getRow(i).getCell(1).getStringCellValue();
 		}
+		workbook.close();
+		fs.close();
 
 		return data;
 

@@ -3,7 +3,15 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="JenkinsPac.Test1"/>
+      <class name="Practice_Questions.Q2_Login"/>
+      <class name="Practice_Questions.Q9_ScreenShot"/>
+      <class name="Practice_Questions.Q8_Multiple_WindowsHandling"/>
+      <class name="Practice_Questions.Q4_Dropdown"/>
+      <class name="Practice_Questions.Q1_Browser"/>
+      <class name="Practice_Questions.Q3__PrintAll"/>
+      <class name="Practice_Questions.Q6_Checkbox"/>
+      <class name="Practice_Questions.Q5_Alert"/>
+      <class name="Practice_Questions.Q7"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

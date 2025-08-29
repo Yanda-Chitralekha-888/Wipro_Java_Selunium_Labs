@@ -21,27 +21,26 @@ import org.testng.annotations.AfterSuite;
 public class Q3__PrintAll {
 	WebDriver driver;
   @Test(dataProvider = "dp")
-  public void f( String laptap) {
-	  driver.findElement(By.xpath("/html/body/div/div[1]/div[3]/div/div/form/div/div/span/span/button")).click();
-	  driver.findElement(By.id("twotabsearchtextbox")).sendKeys(laptap);
+  public void Search( String search) {
+	 // driver.findElement(By.xpath("/html/body/div/div[1]/div[3]/div/div/form/div/div/span/span/button")).click();
+	  driver.findElement(By.name("field-keywords")).sendKeys(search);
 	  driver.findElement(By.id("nav-search-submit-button")).click();
-	 WebElement product1=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/span/div/div/div/div[2]/div/div/div[1]/a/h2/span"));
-	 System.out.println("1st Product:"+product1.getText());
-	 WebElement product2=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div/div[2]/div/div/div[1]/a/h2/span"));
-	 System.out.println("2nd Product:"+product2.getText());
-	 WebElement product3=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div/div/span/div/div/div/div[2]/div/div/div[1]/a/h2/span"));
-	 System.out.println("3rd Product:"+product3.getText());
-	 WebElement product4= driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[5]/div/div/span/div/div/div/div[2]/div/div/div[1]/a/h2/span"));
-	 System.out.println("4th Product:"+product4.getText());
-	 WebElement product5=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[6]/div/div/span/div/div/div/div[2]/div/div/div[1]/a/h2/span"));
-	 System.out.println("5th Product:"+product5.getText()); 
+	  WebElement product1=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div/div[2]/div/div/div[1]/a/h2/span"));
+	  System.out.println("1st Product:"+product1.getText());
+	  WebElement product2=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div/div/div/div/span/div/div/div/div[2]/div/div/div[1]/a/h2/span"));
+	  System.out.println("2st Product:"+product2.getText());
+	  WebElement product3=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[5]/div/div/span/div/div/div/div[2]/div/div/div[1]/a/h2/span"));
+	  System.out.println("3st Product:"+product3.getText());
+	  WebElement product4=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[6]/div/div/span/div/div/div/div[2]/div/div/div[1]/a/h2/span"));
+	  System.out.println("4st Product:"+product4.getText());
+	  WebElement product5=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[7]/div/div/span/div/div/div/div[2]/div/div/div[1]/a/h2/span"));
+	  System.out.println("5st Product:"+product5.getText());
   }
   @BeforeMethod
   public void beforeMethod() {
 	  WebDriverManager.chromedriver().setup();
 	  driver=new ChromeDriver();
 	  driver.get("https://www.amazon.in/");
-  
   }
 
   @AfterMethod
@@ -52,8 +51,8 @@ public class Q3__PrintAll {
   @DataProvider
   public Object[][] dp() {
     return new Object[][] {
-      new Object[] { "laptap" },
-     // new Object[] { 2, "b" },
+      new Object[] { "laptop" },
+      
     };
   }
   @BeforeClass

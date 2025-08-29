@@ -1,5 +1,7 @@
 package com.orangehrm.base;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -14,30 +16,36 @@ import com.orangehrm.utilities.ExtentManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-	WebDriver driver;
-	protected ExtentReports extent;
-	protected ExtentTest test;
 
-	@BeforeSuite
-	public void setupreport() {
-		extent = ExtentManager.getinstance();
-	}
-
-	@BeforeMethod
-	public void setup() {
-		System.out.println("Before method");
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-	}
-
-	@AfterMethod
-	public void teardown() {
-		System.out.println("After method");
-		driver.quit();
-	}
-
-	@AfterSuite
+		protected WebDriver driver;
+		
+		protected ExtentReports extent;
+		protected ExtentTest test;
+		@BeforeSuite
+		public void setupreport()
+		{
+			extent=ExtentManager.getinstance();
+		}
+		public void navigateurl(String url)
+		{
+			 driver.get(url);
+		}
+		
+		@BeforeMethod
+		  public void setup() {
+			  System.out.println("Before method");
+			  WebDriverManager.chromedriver().setup();
+				driver=new ChromeDriver();
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+				//driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		  }
+		  @AfterMethod
+		  public void teardown() {
+			  System.out.println("After method");
+			  driver.quit();
+		  }
+		
+		@AfterSuite
 	public void flushreport()
 
 	{

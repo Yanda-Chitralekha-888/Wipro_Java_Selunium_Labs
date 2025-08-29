@@ -3,15 +3,71 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.orangehrm.tests.LoginOrangeHRM">
+      <class name="Practice_Questions.Q3__PrintAll">
         <methods>
-          <include name="flushreport"/>
-          <include name="setupreport"/>
-          <include name="teardown"/>
-          <include name="verifylogin"/>
-          <include name="setup"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.orangehrm.tests.LoginOrangeHRM -->
+      </class> <!-- Practice_Questions.Q3__PrintAll -->
+      <class name="Practice_Questions.Q1_Browser">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Practice_Questions.Q1_Browser -->
+      <class name="Practice_Questions.Q6_Checkbox">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="f" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Practice_Questions.Q6_Checkbox -->
+      <class name="Practice_Questions.Q2_Login">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Practice_Questions.Q2_Login -->
+      <class name="Practice_Questions.Q4_Dropdown">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Dropdown"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- Practice_Questions.Q4_Dropdown -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

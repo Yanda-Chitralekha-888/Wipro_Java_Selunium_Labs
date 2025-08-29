@@ -1,17 +1,420 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-26T18:26:35 IST" name="Suite" finished-at="2025-08-26T18:26:42 IST" duration-ms="7203">
+  <suite started-at="2025-08-29T14:48:27 IST" name="Suite" finished-at="2025-08-29T14:49:32 IST" duration-ms="65429">
     <groups>
     </groups>
-    <test started-at="2025-08-26T18:26:35 IST" name="Test" finished-at="2025-08-26T18:26:42 IST" duration-ms="7203">
-      <class name="JenkinsPac.Test1">
-        <test-method signature="f()[pri:0, instance:JenkinsPac.Test1@9d5509a]" started-at="2025-08-26T18:26:35 IST" name="f" finished-at="2025-08-26T18:26:42 IST" duration-ms="7160" status="PASS">
+    <test started-at="2025-08-29T14:48:27 IST" name="Test" finished-at="2025-08-29T14:49:32 IST" duration-ms="65429">
+      <class name="Practice_Questions.Q8_Multiple_WindowsHandling">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Practice_Questions.Q8_Multiple_WindowsHandling@37883b97]" started-at="2025-08-29T14:48:27 IST" name="beforeSuite" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Practice_Questions.Q8_Multiple_WindowsHandling@37883b97]" started-at="2025-08-29T14:48:27 IST" name="beforeTest" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Practice_Questions.Q8_Multiple_WindowsHandling@37883b97]" started-at="2025-08-29T14:48:37 IST" name="beforeClass" finished-at="2025-08-29T14:48:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Practice_Questions.Q8_Multiple_WindowsHandling@37883b97]" started-at="2025-08-29T14:48:37 IST" name="beforeMethod" finished-at="2025-08-29T14:48:42 IST" duration-ms="5343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f()[pri:0, instance:Practice_Questions.Q8_Multiple_WindowsHandling@37883b97]" started-at="2025-08-29T14:48:42 IST" name="f" finished-at="2025-08-29T14:48:45 IST" duration-ms="3450" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-      </class> <!-- JenkinsPac.Test1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Practice_Questions.Q8_Multiple_WindowsHandling@37883b97]" started-at="2025-08-29T14:48:45 IST" name="afterMethod" finished-at="2025-08-29T14:48:45 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Practice_Questions.Q8_Multiple_WindowsHandling@37883b97]" started-at="2025-08-29T14:48:45 IST" name="afterClass" finished-at="2025-08-29T14:48:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Practice_Questions.Q8_Multiple_WindowsHandling@37883b97]" started-at="2025-08-29T14:49:32 IST" name="afterTest" finished-at="2025-08-29T14:49:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Practice_Questions.Q8_Multiple_WindowsHandling@37883b97]" started-at="2025-08-29T14:49:32 IST" name="afterSuite" finished-at="2025-08-29T14:49:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Practice_Questions.Q8_Multiple_WindowsHandling -->
+      <class name="Practice_Questions.Q2_Login">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Practice_Questions.Q2_Login@c86b9e3]" started-at="2025-08-29T14:48:27 IST" name="beforeSuite" finished-at="2025-08-29T14:48:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Practice_Questions.Q2_Login@c86b9e3]" started-at="2025-08-29T14:48:27 IST" name="beforeTest" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Practice_Questions.Q2_Login@c86b9e3]" started-at="2025-08-29T14:48:27 IST" name="beforeClass" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Practice_Questions.Q2_Login@c86b9e3]" started-at="2025-08-29T14:48:27 IST" name="beforeMethod" finished-at="2025-08-29T14:48:32 IST" duration-ms="5573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:Practice_Questions.Q2_Login@c86b9e3]" started-at="2025-08-29T14:48:32 IST" name="f" data-provider="dp" finished-at="2025-08-29T14:48:33 IST" duration-ms="1136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Practice_Questions.Q2_Login@c86b9e3]" started-at="2025-08-29T14:48:33 IST" name="afterMethod" finished-at="2025-08-29T14:48:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Practice_Questions.Q2_Login@c86b9e3]" started-at="2025-08-29T14:48:33 IST" name="afterClass" finished-at="2025-08-29T14:48:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Practice_Questions.Q2_Login@c86b9e3]" started-at="2025-08-29T14:49:32 IST" name="afterTest" finished-at="2025-08-29T14:49:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Practice_Questions.Q2_Login@c86b9e3]" started-at="2025-08-29T14:49:32 IST" name="afterSuite" finished-at="2025-08-29T14:49:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Practice_Questions.Q2_Login -->
+      <class name="Practice_Questions.Q9_ScreenShot">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Practice_Questions.Q9_ScreenShot@38102d01]" started-at="2025-08-29T14:48:27 IST" name="beforeSuite" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Practice_Questions.Q9_ScreenShot@38102d01]" started-at="2025-08-29T14:48:27 IST" name="beforeTest" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Practice_Questions.Q9_ScreenShot@38102d01]" started-at="2025-08-29T14:48:33 IST" name="beforeClass" finished-at="2025-08-29T14:48:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Practice_Questions.Q9_ScreenShot@38102d01]" started-at="2025-08-29T14:48:33 IST" name="beforeMethod" finished-at="2025-08-29T14:48:36 IST" duration-ms="2108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f(java.lang.Integer,java.lang.String)[pri:0, instance:Practice_Questions.Q9_ScreenShot@38102d01]" started-at="2025-08-29T14:48:36 IST" name="f" data-provider="dp" finished-at="2025-08-29T14:48:37 IST" duration-ms="1020" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Practice_Questions.Q9_ScreenShot@38102d01]" started-at="2025-08-29T14:48:37 IST" name="afterMethod" finished-at="2025-08-29T14:48:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Practice_Questions.Q9_ScreenShot@38102d01]" started-at="2025-08-29T14:48:37 IST" name="afterClass" finished-at="2025-08-29T14:48:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Practice_Questions.Q9_ScreenShot@38102d01]" started-at="2025-08-29T14:49:32 IST" name="afterTest" finished-at="2025-08-29T14:49:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Practice_Questions.Q9_ScreenShot@38102d01]" started-at="2025-08-29T14:49:32 IST" name="afterSuite" finished-at="2025-08-29T14:49:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Practice_Questions.Q9_ScreenShot -->
+      <class name="Practice_Questions.Q1_Browser">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Practice_Questions.Q1_Browser@4e3958e7]" started-at="2025-08-29T14:48:27 IST" name="beforeSuite" finished-at="2025-08-29T14:48:27 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Practice_Questions.Q1_Browser@4e3958e7]" started-at="2025-08-29T14:48:27 IST" name="beforeTest" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Practice_Questions.Q1_Browser@4e3958e7]" started-at="2025-08-29T14:48:49 IST" name="beforeClass" finished-at="2025-08-29T14:48:49 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Practice_Questions.Q1_Browser@4e3958e7]" started-at="2025-08-29T14:48:49 IST" name="beforeMethod" finished-at="2025-08-29T14:48:55 IST" duration-ms="5139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f(java.lang.Integer,java.lang.String)[pri:0, instance:Practice_Questions.Q1_Browser@4e3958e7]" started-at="2025-08-29T14:48:55 IST" name="f" data-provider="dp" finished-at="2025-08-29T14:48:55 IST" duration-ms="50" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Practice_Questions.Q1_Browser@4e3958e7]" started-at="2025-08-29T14:48:55 IST" name="afterMethod" finished-at="2025-08-29T14:48:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Practice_Questions.Q1_Browser@4e3958e7]" started-at="2025-08-29T14:48:55 IST" name="afterClass" finished-at="2025-08-29T14:48:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Practice_Questions.Q1_Browser@4e3958e7]" started-at="2025-08-29T14:49:32 IST" name="afterTest" finished-at="2025-08-29T14:49:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Practice_Questions.Q1_Browser@4e3958e7]" started-at="2025-08-29T14:49:32 IST" name="afterSuite" finished-at="2025-08-29T14:49:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Practice_Questions.Q1_Browser -->
+      <class name="Practice_Questions.Q6_Checkbox">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Practice_Questions.Q6_Checkbox@1dac5ef]" started-at="2025-08-29T14:48:27 IST" name="beforeSuite" finished-at="2025-08-29T14:48:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Practice_Questions.Q6_Checkbox@1dac5ef]" started-at="2025-08-29T14:48:27 IST" name="beforeTest" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Practice_Questions.Q6_Checkbox@1dac5ef]" started-at="2025-08-29T14:49:12 IST" name="beforeClass" finished-at="2025-08-29T14:49:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Practice_Questions.Q6_Checkbox@1dac5ef]" started-at="2025-08-29T14:49:12 IST" name="beforeMethod" finished-at="2025-08-29T14:49:17 IST" duration-ms="5323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f(java.lang.Integer,java.lang.String)[pri:0, instance:Practice_Questions.Q6_Checkbox@1dac5ef]" started-at="2025-08-29T14:49:17 IST" name="f" data-provider="dp" finished-at="2025-08-29T14:49:17 IST" duration-ms="315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Practice_Questions.Q6_Checkbox@1dac5ef]" started-at="2025-08-29T14:49:17 IST" name="afterMethod" finished-at="2025-08-29T14:49:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Practice_Questions.Q6_Checkbox@1dac5ef]" started-at="2025-08-29T14:49:17 IST" name="afterClass" finished-at="2025-08-29T14:49:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Practice_Questions.Q6_Checkbox@1dac5ef]" started-at="2025-08-29T14:49:32 IST" name="afterTest" finished-at="2025-08-29T14:49:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Practice_Questions.Q6_Checkbox@1dac5ef]" started-at="2025-08-29T14:49:32 IST" name="afterSuite" finished-at="2025-08-29T14:49:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Practice_Questions.Q6_Checkbox -->
+      <class name="Practice_Questions.Q4_Dropdown">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Practice_Questions.Q4_Dropdown@6ab778a]" started-at="2025-08-29T14:48:27 IST" name="beforeSuite" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Practice_Questions.Q4_Dropdown@6ab778a]" started-at="2025-08-29T14:48:27 IST" name="beforeTest" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Practice_Questions.Q4_Dropdown@6ab778a]" started-at="2025-08-29T14:48:45 IST" name="beforeClass" finished-at="2025-08-29T14:48:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Practice_Questions.Q4_Dropdown@6ab778a]" started-at="2025-08-29T14:48:45 IST" name="beforeMethod" finished-at="2025-08-29T14:48:49 IST" duration-ms="3244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Dropdown()[pri:0, instance:Practice_Questions.Q4_Dropdown@6ab778a]" started-at="2025-08-29T14:48:49 IST" name="Dropdown" finished-at="2025-08-29T14:48:49 IST" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dropdown -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Practice_Questions.Q4_Dropdown@6ab778a]" started-at="2025-08-29T14:48:49 IST" name="afterMethod" finished-at="2025-08-29T14:48:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Practice_Questions.Q4_Dropdown@6ab778a]" started-at="2025-08-29T14:48:49 IST" name="afterClass" finished-at="2025-08-29T14:48:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Practice_Questions.Q4_Dropdown@6ab778a]" started-at="2025-08-29T14:49:32 IST" name="afterTest" finished-at="2025-08-29T14:49:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Practice_Questions.Q4_Dropdown@6ab778a]" started-at="2025-08-29T14:49:32 IST" name="afterSuite" finished-at="2025-08-29T14:49:32 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Practice_Questions.Q4_Dropdown -->
+      <class name="Practice_Questions.Q3__PrintAll">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Practice_Questions.Q3__PrintAll@77f80c04]" started-at="2025-08-29T14:48:27 IST" name="beforeSuite" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Practice_Questions.Q3__PrintAll@77f80c04]" started-at="2025-08-29T14:48:27 IST" name="beforeTest" finished-at="2025-08-29T14:48:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Practice_Questions.Q3__PrintAll@77f80c04]" started-at="2025-08-29T14:48:55 IST" name="beforeClass" finished-at="2025-08-29T14:48:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Practice_Questions.Q3__PrintAll@77f80c04]" started-at="2025-08-29T14:48:55 IST" name="beforeMethod" finished-at="2025-08-29T14:49:01 IST" duration-ms="6565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Search(java.lang.String)[pri:0, instance:Practice_Questions.Q3__PrintAll@77f80c04]" started-at="2025-08-29T14:49:01 IST" name="Search" data-provider="dp" finished-at="2025-08-29T14:49:12 IST" duration-ms="10554" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[laptop]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Practice_Questions.Q3__PrintAll@77f80c04]" started-at="2025-08-29T14:49:12 IST" name="afterMethod" finished-at="2025-08-29T14:49:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Practice_Questions.Q3__PrintAll@77f80c04]" started-at="2025-08-29T14:49:12 IST" name="afterClass" finished-at="2025-08-29T14:49:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Practice_Questions.Q3__PrintAll@77f80c04]" started-at="2025-08-29T14:49:32 IST" name="afterTest" finished-at="2025-08-29T14:49:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Practice_Questions.Q3__PrintAll@77f80c04]" started-at="2025-08-29T14:49:32 IST" name="afterSuite" finished-at="2025-08-29T14:49:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Practice_Questions.Q3__PrintAll -->
+      <class name="Practice_Questions.Q5_Alert">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Practice_Questions.Q5_Alert@5c90e579]" started-at="2025-08-29T14:48:27 IST" name="beforeSuite" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Practice_Questions.Q5_Alert@5c90e579]" started-at="2025-08-29T14:48:27 IST" name="beforeTest" finished-at="2025-08-29T14:48:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Practice_Questions.Q5_Alert@5c90e579]" started-at="2025-08-29T14:49:17 IST" name="beforeClass" finished-at="2025-08-29T14:49:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Practice_Questions.Q5_Alert@5c90e579]" started-at="2025-08-29T14:49:17 IST" name="beforeMethod" finished-at="2025-08-29T14:49:26 IST" duration-ms="8656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f(java.lang.Integer,java.lang.String)[pri:0, instance:Practice_Questions.Q5_Alert@5c90e579]" started-at="2025-08-29T14:49:26 IST" name="f" data-provider="dp" finished-at="2025-08-29T14:49:26 IST" duration-ms="223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Practice_Questions.Q5_Alert@5c90e579]" started-at="2025-08-29T14:49:26 IST" name="afterMethod" finished-at="2025-08-29T14:49:26 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Practice_Questions.Q5_Alert@5c90e579]" started-at="2025-08-29T14:49:26 IST" name="afterClass" finished-at="2025-08-29T14:49:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Practice_Questions.Q5_Alert@5c90e579]" started-at="2025-08-29T14:49:32 IST" name="afterTest" finished-at="2025-08-29T14:49:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Practice_Questions.Q5_Alert@5c90e579]" started-at="2025-08-29T14:49:32 IST" name="afterSuite" finished-at="2025-08-29T14:49:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Practice_Questions.Q5_Alert -->
+      <class name="Practice_Questions.Q7">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Practice_Questions.Q7@58ea606c]" started-at="2025-08-29T14:48:27 IST" name="beforeSuite" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Practice_Questions.Q7@58ea606c]" started-at="2025-08-29T14:48:27 IST" name="beforeTest" finished-at="2025-08-29T14:48:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Practice_Questions.Q7@58ea606c]" started-at="2025-08-29T14:49:26 IST" name="beforeClass" finished-at="2025-08-29T14:49:26 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Practice_Questions.Q7@58ea606c]" started-at="2025-08-29T14:49:26 IST" name="beforeMethod" finished-at="2025-08-29T14:49:32 IST" duration-ms="5344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f()[pri:0, instance:Practice_Questions.Q7@58ea606c]" started-at="2025-08-29T14:49:32 IST" name="f" finished-at="2025-08-29T14:49:32 IST" duration-ms="519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Practice_Questions.Q7@58ea606c]" started-at="2025-08-29T14:49:32 IST" name="afterMethod" finished-at="2025-08-29T14:49:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Practice_Questions.Q7@58ea606c]" started-at="2025-08-29T14:49:32 IST" name="afterClass" finished-at="2025-08-29T14:49:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Practice_Questions.Q7@58ea606c]" started-at="2025-08-29T14:49:32 IST" name="afterTest" finished-at="2025-08-29T14:49:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Practice_Questions.Q7@58ea606c]" started-at="2025-08-29T14:49:32 IST" name="afterSuite" finished-at="2025-08-29T14:49:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Practice_Questions.Q7 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
