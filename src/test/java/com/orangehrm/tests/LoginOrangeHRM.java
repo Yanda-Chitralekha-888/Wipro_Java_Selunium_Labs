@@ -13,6 +13,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.orangehrm.base.BaseTest;
@@ -21,11 +22,13 @@ import com.orangehrm.utilities.ExcelUtilities;
 import com.orangehrm.utilities.Screenshot;
 import io.cucumber.core.logging.LoggerFactory;
 
+@Listeners(com.orangehrm.listeners. TestListener.class)
+
 public class LoginOrangeHRM extends BaseTest {
     
     static String projectpath = System.getProperty("user.dir");
 
-    @Test(dataProvider="logindata",enabled=false)
+    @Test(dataProvider="logindata")
     public void verifylogin(String username, String password) throws IOException {
     	 navigateurl("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         // Extent Report Test
@@ -192,7 +195,7 @@ public void question8_windowHandaling() throws InterruptedException {
 	  System.out.println("Parent window:"+parent);
 	  System.out.println("Parent Title :"+driver.getTitle()+" Parent url is:"+driver.getCurrentUrl());
 }
-@Test 
+@Test (enabled=false)
 public void question9_Screenshot() throws IOException {
 	navigateurl("https://www.wikipedia.org/");
 	 File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
